@@ -5,7 +5,7 @@ public class Streams {
 		OPEN, CLOSED
 	};
 
-	private static final class Task {
+	public static final class Task {
 		private final Status status;
 		private final Integer points;
 
