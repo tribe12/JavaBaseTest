@@ -499,5 +499,5 @@ public class StringTest {
 		System.out.println(StringUtils.contains("123456", "32"));// false
 		System.out.println(StringUtils.contains("1", "123456"));// false
 	}
-	
+
 }

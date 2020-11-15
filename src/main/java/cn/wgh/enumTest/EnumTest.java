@@ -13,7 +13,7 @@ public class EnumTest {
 		System.out.println(AttachmentEnum.LEAVE.toString());
 		System.out.println(AttachmentEnum.SIGN_RECORD.getValue());
 		System.out.println(AttachmentEnum.SIGN_RECORD.getKey());
-		System.out.println(AttachmentEnum.valueOf("2"));
+		System.out.println(AttachmentEnum.valueOf("LEAVE"));
 		
 		
 	}
