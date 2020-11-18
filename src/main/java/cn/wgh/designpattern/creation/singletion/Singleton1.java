@@ -1,4 +1,4 @@
-package cn.wgh.design-pattern.creation.singletion;
+package cn.wgh.designpattern.creation.singletion;
 
 /**
  * 单例模式——饿汉模式
