@@ -1,7 +1,7 @@
-package cn.wgh.DesignPattern.Singleton;
+package cn.wgh.design-pattern.creation.singletion;
 
 /**
- * 懒汉模式
+ * 单例模式——懒汉模式
  */
 public class Singleton2 {
     private static Singleton2 singleton = null;
