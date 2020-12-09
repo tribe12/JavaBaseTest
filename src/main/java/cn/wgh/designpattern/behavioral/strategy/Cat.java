@@ -1,4 +1,4 @@
-package cn.wgh.designpattern.strategy;
+package cn.wgh.designpattern.behavioral.strategy;
 
 /**
  * Created by wgh on 2020/11/18.

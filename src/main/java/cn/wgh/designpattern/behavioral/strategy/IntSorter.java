@@ -1,4 +1,4 @@
-package cn.wgh.designpattern.strategy;
+package cn.wgh.designpattern.behavioral.strategy;
 
 /**
  * 比较器

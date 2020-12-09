@@ -1,6 +1,5 @@
-package cn.wgh.designpattern.strategy;
+package cn.wgh.designpattern.behavioral.strategy;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.junit.Test;
 /**
  * Created by wgh on 2020/12/5.

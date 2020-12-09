@@ -1,4 +1,4 @@
-package cn.wgh.designpattern.strategy;
+package cn.wgh.designpattern.behavioral.strategy;
 
 /**
  * 猫重量的比较策略
