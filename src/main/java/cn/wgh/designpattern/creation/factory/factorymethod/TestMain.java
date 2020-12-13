@@ -3,6 +3,7 @@ package cn.wgh.designpattern.creation.factory.factorymethod;
 import org.junit.Test;
 
 /**
+ * 工厂模式——工厂方法模式
  * Created by wgh on 2020/12/10.
  */
 public class TestMain {

@@ -3,6 +3,7 @@ package cn.wgh.designpattern.creation.factory.abstractfactory;
 import org.junit.Test;
 
 /**
+ * 工厂模式——抽象工厂模式
  * Created by wgh on 2020/12/9.
  */
 public class TestMain {
