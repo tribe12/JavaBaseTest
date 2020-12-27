@@ -1,7 +1,7 @@
 package cn.wgh.enumTest;
 
 /**
- * @author lenovo
+ * @author wgh
  * @date 2017/10/20
  */
 public enum AttachmentEnum {
