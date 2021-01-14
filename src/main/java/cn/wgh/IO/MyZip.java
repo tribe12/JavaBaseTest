@@ -72,7 +72,7 @@ public class MyZip {
             ZipEntry entry = zipInputStream.getNextEntry();
             while ((entry = zipInputStream.getNextEntry()) != null && !entry.isDirectory()) {
                 //如果entry不为空，并不在同一目录下
-                File file = new File("F:\\" + entry.getName());
+                File file = new File("" + entry.getName());
                 System.out.println(file);
                 if (!file.exists()) {
                     file.mkdirs();
