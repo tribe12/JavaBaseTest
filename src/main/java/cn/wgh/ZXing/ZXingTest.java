@@ -14,7 +14,7 @@ import android.graphics.Bitmap;
 import android.widget.ImageView;
 
 public class ZXingTest {
-	/*private void initialLayout() {
+	private void initialLayout() {  
 	    ImageView imageQRCode = (ImageView) findViewById(R.id.imageQRCode); 
 	    String contentQRCode = Constant.Server.URL_MAP_INDEX + MyApp.deviceId;  
 	    try {  
@@ -25,5 +25,5 @@ public class ZXingTest {
 	    } catch (WriterException e) {  
 	        e.printStackTrace();  
 	    }  
-	} */
+	}  
 }

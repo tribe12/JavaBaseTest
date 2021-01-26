@@ -7,8 +7,4 @@ package cn.wgh.designpattern.creation.factory.abstractfactory;
  */
 public abstract class Vehicle {
     abstract void go();
-
-    public void ggg(){
-
-    }
 }
