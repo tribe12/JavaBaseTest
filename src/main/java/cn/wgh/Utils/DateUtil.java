@@ -1,12 +1,13 @@
 package cn.wgh.Utils;
 
+import cn.hutool.core.date.DateTime;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.LinkedHashSet;
 import java.util.Locale;
-
-import com.mobao360.core.exception.FuUtilException;
+//import com.mobao360.core.exception.FuUtilException;
 
 /**
  * 时间工具类
@@ -293,14 +294,14 @@ public class DateUtil {
 	 *            格式化器
 	 * @return DateTime对象
 	 */
-	public static DateTime parse(String dateStr, SimpleDateFormat simpleDateFormat) {
+	/*public static DateTime parse(String dateStr, SimpleDateFormat simpleDateFormat) {
 		try {
 			return new DateTime(simpleDateFormat.parse(dateStr));
 		} catch (Exception e) {
 			throw new FuUtilException(
 					StrUtil.format("Parse [{}] with format [{}] error!", dateStr, simpleDateFormat.toPattern()), e);
 		}
-	}
+	}*/
 
 	/**
 	 * 将特定格式的日期转换为Date对象
@@ -311,9 +312,10 @@ public class DateUtil {
 	 *            格式，例如yyyy-MM-dd
 	 * @return 日期对象
 	 */
+	/*
 	public static DateTime parse(String dateString, String format) {
 		return parse(dateString, new SimpleDateFormat(format));
-	}
+	}*/
 
 	/**
 	 * 格式yyyy-MM-dd HH:mm:ss
@@ -322,9 +324,11 @@ public class DateUtil {
 	 *            标准形式的时间字符串
 	 * @return 日期对象
 	 */
+/*
 	public static DateTime parseDateTime(String dateString) {
 		return parse(dateString, NORM_DATETIME_FORMAT.get());
 	}
+*/
 
 	/**
 	 * 格式yyyy-MM-dd
@@ -333,9 +337,11 @@ public class DateUtil {
 	 *            标准形式的日期字符串
 	 * @return 日期对象
 	 */
+/*
 	public static DateTime parseDate(String dateString) {
 		return parse(dateString, NORM_DATE_FORMAT.get());
 	}
+*/
 
 	/**
 	 * 格式HH:mm:ss
@@ -344,9 +350,11 @@ public class DateUtil {
 	 *            标准形式的日期字符串
 	 * @return 日期对象
 	 */
+/*
 	public static DateTime parseTime(String timeString) {
 		return parse(timeString, NORM_TIME_FORMAT.get());
 	}
+*/
 
 	/**
 	 * 格式：<br>
@@ -359,7 +367,7 @@ public class DateUtil {
 	 *            日期字符串
 	 * @return 日期
 	 */
-	public static DateTime parse(String dateStr) {
+/*	public static DateTime parse(String dateStr) {
 		if (null == dateStr) {
 			return null;
 		}
@@ -383,7 +391,7 @@ public class DateUtil {
 
 		// 没有更多匹配的时间格式
 		throw new FuUtilException(StrUtil.format(" [{}] format is not fit for date pattern!", dateStr));
-	}
+	}*/
 	// ------------------------------------ Parse end
 	// ----------------------------------------------
 

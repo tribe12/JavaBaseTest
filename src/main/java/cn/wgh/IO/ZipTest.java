@@ -17,7 +17,7 @@ public class ZipTest {
     public void zipTest() throws Exception {
         MyZip myZip = new MyZip();
         try {
-            myZip.zip("F:\\test\\io\\zip\\z1.zip", new File("F:\\test\\io\\zip\\z2"));
+            myZip.zip("F:\\test\\io\\zip\\z1.zip", new File("F:\\test\\io\\zip\\z1"));
 
         } catch (Exception e) {
             e.printStackTrace();
