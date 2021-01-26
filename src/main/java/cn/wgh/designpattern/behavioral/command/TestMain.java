@@ -16,7 +16,7 @@ public class TestMain {
 
     @Test
     public void test1() throws Exception {
-        Content content = new Content("hello everyable ");
+        Content content = new Content("hello everybody ");
         System.out.println(content.msg);
         System.out.println("-----------------------");
 
