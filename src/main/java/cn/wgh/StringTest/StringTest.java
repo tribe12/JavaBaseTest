@@ -1,22 +1,13 @@
 
 package cn.wgh.StringTest;
 
-import static org.junit.Assert.*;
-
-import java.math.BigDecimal;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
+
+import java.net.URLDecoder;
+import java.text.DecimalFormat;
+import java.util.*;
 
 public class StringTest {
 	@Test
@@ -500,4 +491,13 @@ public class StringTest {
 		System.out.println(StringUtils.contains("1", "123456"));// false
 	}
 
+
+	@Test
+	public void formatTest() throws Exception {
+		String name = "Abc";
+		String result1 = String.format("Hello %s!", name);
+		String result2 = String.format("Hello %S!", name);
+		System.out.println(result1);
+		System.out.println(result2);
+	}
 }
