@@ -24,11 +24,11 @@ public class CopyTest {
      */
     @Test
     public void test2() throws Exception {
-       /* File src = new File("F:\\javatest\\Filetest\\文件夹1");
-        File destDir = new File("F:\\javatest\\Filetest\\文件夹4");*/
+        File src = new File("F:\\javatest\\Filetest\\文件夹1");
+        File destDir = new File("F:\\javatest\\Filetest\\文件夹4");
 
-        File src = new File("J:\\OPPOA7\\video");
-        File destDir = new File("J:\\OPPOA7\\video");
+        /*File src = new File("J:\\OPPOA7\\video");
+        File destDir = new File("J:\\OPPOA7\\video");*/
         cn.wgh.IO.FileUtils.copyAllFileToDirectory(src, destDir);
     }
 

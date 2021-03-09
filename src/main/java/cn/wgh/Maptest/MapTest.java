@@ -1,17 +1,9 @@
 package cn.wgh.Maptest;
 
-import static org.junit.Assert.*;
-
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-
-import javax.print.attribute.HashAttributeSet;
-
 import org.junit.Test;
+
+import java.util.*;
+import java.util.Map.Entry;
 //import org.apache.commons.collections.MapUtils;
 
 public class MapTest {

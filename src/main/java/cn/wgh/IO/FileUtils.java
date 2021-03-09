@@ -10,9 +10,10 @@ import java.io.IOException;
  */
 public class FileUtils {
 
-    public static void copyAllFileToDirectory(File src, File destDir) {
+    public static long copyAllFileToDirectory(File src, File destDir) {
         long copyCount = copyAllFileToDirectory(src, destDir, 0l);
         System.out.println("copy file count:" + copyCount);
+        return copyCount;
     }
 
     private static long copyAllFileToDirectory(File src, File destDir, long copyCount) {
