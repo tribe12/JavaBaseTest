@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="tank" class="cn.wgh.designpattern.structural.proxy.spring.v1.Tank"/>
+    <bean id="timeProxy" class="cn.wgh.designpattern.structural.proxy.spring.v1.TimeProxy"/>
+    <aop:config>
+        <aop:aspect id="time" ref="timeProxy">
+            <aop:pointcut id="onmove"
+                          expression="execution(void cn.wgh.designpattern.structural.proxy.spring.v1.Tank.move())"/>
+            <aop:before method="before" pointcut-ref="onmove"/>
+            <aop:before method="after" pointcut-ref="onmove"/>
+        </aop:aspect>
+    </aop:config>
+</beans>
