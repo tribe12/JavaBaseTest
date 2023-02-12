@@ -59,6 +59,13 @@ public class HashTableTest {
 
         System.out.println(ht.size());// 5
 
+
+        System.out.println("删除后对键进行遍历:");
+        Iterator it1 = ht.keySet().iterator();
+        while (it1.hasNext()) {
+            Integer key = (Integer) it1.next();
+            System.out.println(key);
+        }
     }
 
 }
