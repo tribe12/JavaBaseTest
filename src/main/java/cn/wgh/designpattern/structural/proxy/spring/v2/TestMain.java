@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class TestMain {
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-aop-test-1.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-aop-test-2.xml");
         Tank tank = applicationContext.getBean(Tank.class,"tank");
         tank.move();
     }

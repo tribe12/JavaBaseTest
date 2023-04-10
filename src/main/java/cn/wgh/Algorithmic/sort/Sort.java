@@ -31,13 +31,8 @@ public class Sort {
     }
 
 
-
-
-
-
     /**
      * 插入排序
-     *
      *
      * @throws Exception
      */
@@ -77,13 +72,9 @@ public class Sort {
     }
 
 
-
-
-
-
     /**
      * 选择排序
-     *
+     * <p>
      * 每一轮比较后找出最小（大）值的下标位置，
      * 然后将最小（大）值放在每一轮的最前面（起始位置）
      *
@@ -107,11 +98,6 @@ public class Sort {
     }
 
 
-
-
-
-
-
     /**
      * 基数排序
      *
@@ -133,7 +119,7 @@ public class Sort {
 
         //获取最大的位数
         int maxPlace = getArrayMaxPlace(a);
-        for (int i = 1; i <= maxPlace; i*=10) {
+        for (int i = 1; i <= maxPlace; i *= 10) {
             r0 = new ArrayList<>();
             r1 = new ArrayList<>();
             r2 = new ArrayList<>();
@@ -165,9 +151,7 @@ public class Sort {
      *
      * @param a
      * @param p 位数（1、10、100、1000...）
-     * @return
-     *
-     * 有待改进
+     * @return 有待改进
      */
     public static int getPlaceNum(int a, int p) {
         int num = 0;
@@ -197,7 +181,7 @@ public class Sort {
      * @return
      */
     public static int getPlace(int num) {
-        return getPlace10x(num)/10;
+        return getPlace10x(num) / 10;
     }
 
     public static int getPlace10x(int num) {
@@ -228,12 +212,13 @@ public class Sort {
 
     /**
      * 获取数组中最大值的位数
-     *
+     * <p>
      * 个位：1
      * 十位：10
      * 百位：100
      * 千位：1000
      * 万位：10000
+     *
      * @param a
      * @return
      */
@@ -259,8 +244,7 @@ public class Sort {
     }
 
     /**
-     *
-     * @param a 要添加的数
+     * @param a     要添加的数
      * @param radix 某个位置的数
      * @param r0
      * @param r1
@@ -276,53 +260,54 @@ public class Sort {
     public static void addRadixList(int a, int radix, List<Integer> r0, List<Integer> r1, List<Integer> r2, List<Integer> r3, List<Integer> r4, List<Integer> r5, List<Integer> r6, List<Integer> r7, List<Integer> r8, List<Integer> r9) {
         switch (radix) {
             case 0:
-                r0.add(a); break;
+                r0.add(a);
+                break;
             case 1:
-                r1.add(a); break;
+                r1.add(a);
+                break;
             case 2:
-                r2.add(a); break;
+                r2.add(a);
+                break;
             case 3:
-                r3.add(a); break;
+                r3.add(a);
+                break;
             case 4:
-                r4.add(a); break;
+                r4.add(a);
+                break;
             case 5:
-                r5.add(a); break;
+                r5.add(a);
+                break;
             case 6:
-                r6.add(a); break;
+                r6.add(a);
+                break;
             case 7:
-                r7.add(a); break;
+                r7.add(a);
+                break;
             case 8:
-                r8.add(a); break;
+                r8.add(a);
+                break;
             case 9:
-                r9.add(a); break;
+                r9.add(a);
+                break;
         }
     }
 
 
-
     /**
      * 把每个list里的数字依次放入数组a中
+     *
      * @param a
      * @param lists
      */
     public static void addRadixArray(int[] a, List<Integer>... lists) {
         int index = 0;
-        for (List<Integer> list: lists) {
-            for (Integer i: list) {
+        for (List<Integer> list : lists) {
+            for (Integer i : list) {
                 a[index] = i;
                 index++;
             }
         }
     }
-
-
-
-    
-
-
-
-
-
 
 
     /**
