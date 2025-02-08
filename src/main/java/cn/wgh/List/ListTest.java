@@ -898,7 +898,39 @@ public class ListTest {
 		System.out.println(union);
 		System.out.println(sum);
 	}
-	
-	
+
+	@Test
+	public void listRemove() throws Exception {
+		List<Object> list1 = new ArrayList<>();
+		list1.add(1);
+		list1.add(2);
+		list1.add(3);
+		list1.add(4);
+		list1.add(1);
+		list1.add(2);
+		System.out.println(list1);
+		list1.remove(1);
+		System.out.println(list1);
+		List<Integer> list2 = new ArrayList<>();
+		list2.add(1);
+		list2.add(2);
+		list2.add(3);
+		list2.add(4);
+		list2.add(1);
+		list2.add(2);
+		System.out.println(list2);
+		list2.remove(1);
+		System.out.println(list2);
+		List<String> list3 = new ArrayList<>();
+		list3.add("1");
+		list3.add("2");
+		list3.add("3");
+		list3.add("4");
+		list3.add("1");
+		list3.add("2");
+		System.out.println(list3);
+		list3.remove("1");
+		System.out.println(list3);
+	}
 	
 }

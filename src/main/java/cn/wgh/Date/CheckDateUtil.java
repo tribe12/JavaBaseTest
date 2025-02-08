@@ -2,10 +2,12 @@ package cn.wgh.Date;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.time.DateUtils;
 
 public class CheckDateUtil {
 	public static boolean beforeToday(String dateStr) {

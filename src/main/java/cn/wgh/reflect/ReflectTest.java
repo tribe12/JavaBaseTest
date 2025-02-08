@@ -55,9 +55,13 @@ public class ReflectTest {
 		// 获取字节码文件对象
 //		Class<User> clazz = User.class;
 		User usero = new User();
+		usero.setAge(10);
+		usero.setId("1");
+		usero.setName("小明");
+		usero.setPhone("152");
 //		Class<? extends User> clazz = usero.getClass();
 		Class<User> clazz = (Class<User>) usero.getClass();
-		
+
 		// 1.获取所有公共字段(包括继承)
 		System.out.println("------------获取所有公共字段(包括继承)-----------");
 		Field[] fs1 = clazz.getFields();
